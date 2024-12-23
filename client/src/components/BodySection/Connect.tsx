@@ -1,5 +1,5 @@
 import React, { useState, useEffect, ChangeEvent } from "react";
-import { WorldDark, World } from "../Assets/images";
+import { World } from "../Assets/images";
 
 interface CountryCode {
   name: string;
@@ -166,8 +166,7 @@ const Connect: React.FC = () => {
             <div className="flex my-4 text-black gap-3 items-center">
               <input className="w-5" type="checkbox" name="msg" id="msg" />
               <label htmlFor="msg" className="text-lg">
-                Inform me through WhatsApp, Call or SMS, or Mail me
-                directly...
+                Inform me through WhatsApp, Call or SMS, or Mail me directly...
               </label>
             </div>
 

@@ -1,19 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Navbar from "./Navbar";
 import { Logo } from "../Assets/images";
 import { Link } from "react-router-dom";
 
 const Header: React.FC = () => {
-  const [isClient, setIsClient] = useState(false);
-
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
-
   return (
     <div className="w-full bg-white px-2 py-3">
       <div className="flex justify-between gap-3 max-w-[1366px] mx-auto">
-        {/* Logo */}
         <Link to="/">
           <img
             className="w-[5rem]"

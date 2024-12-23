@@ -1,6 +1,7 @@
 import React from "react";
 import { Logo } from "../Assets/images";
 import { FaFacebook, FaInstagramSquare } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -22,11 +23,11 @@ const Footer = () => {
               <div className="flex flex-col">
                 <h1 className="text-xl font-semibold flex gap-2">
                   Find Us on:
-                  <a href="#" className="flex items-center">
+                  <Link to="#" className="flex items-center">
                     <FaFacebook />
                     &nbsp;
                     <FaInstagramSquare />
-                  </a>
+                  </Link>
                 </h1>
                 <p className="text-lg text-primary max-w-80">
                   We are thrilled to have you. Just remember us every-time you
@@ -39,24 +40,24 @@ const Footer = () => {
                     Social Media
                   </h2>
                   <div className="flex flex-col">
-                    <a
-                      href=""
+                    <Link
+                      to=""
                       className="hover:opacity-60 text-black hover:underline"
                     >
                       <span>Facebook</span>
-                    </a>
-                    <a
-                      href=""
+                    </Link>
+                    <Link
+                      to=""
                       className="hover:opacity-60 text-black hover:underline"
                     >
                       <span>Instagram</span>
-                    </a>
-                    <a
-                      href=""
+                    </Link>
+                    <Link
+                      to=""
                       className="hover:opacity-60 text-black hover:underline"
                     >
                       <span>TikTok</span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="flex flex-col">
@@ -64,30 +65,30 @@ const Footer = () => {
                     Quick links
                   </h2>
                   <div className="flex flex-col">
-                    <a
-                      href=""
+                    <Link
+                      to=""
                       className="hover:opacity-60 text-black hover:underline"
                     >
                       <span>About</span>
-                    </a>
-                    <a
-                      href=""
+                    </Link>
+                    <Link
+                      to=""
                       className="hover:opacity-60 text-black hover:underline"
                     >
                       <span>Contact</span>
-                    </a>
-                    <a
-                      href=""
+                    </Link>
+                    <Link
+                      to=""
                       className="hover:opacity-60 text-black hover:underline"
                     >
                       <span>Terms of Condition</span>
-                    </a>
-                    <a
-                      href=""
+                    </Link>
+                    <Link
+                      to=""
                       className="hover:opacity-60 text-black hover:underline"
                     >
                       <span>Privacy Policy</span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="flex flex-col">
