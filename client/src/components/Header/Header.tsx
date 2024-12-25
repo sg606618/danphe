@@ -26,8 +26,6 @@ const Header: React.FC = () => {
               <a href="tel:9841661139">9841661139</a>
             </p>
           </div>
-
-          {/* Navbar */}
           <Navbar />
         </div>
       </div>

@@ -1,9 +1,10 @@
 import React, { createContext } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
 import BodySection from "./components/BodySection/BodySection";
 import Services from "./components/BodySection/Services";
+import Admin from "./Admin/Components/Admin";
+import Dashboard from "./Admin/Components/Dashboard";
+import DailyAccount from "./Admin/Components/DailyAccount";
 
 interface AuthContextType {
   isAuthenticated: boolean;
@@ -23,18 +24,16 @@ function App(): JSX.Element {
   return (
     <AuthContext.Provider value={authContextValue}>
       <BrowserRouter>
-        <Header />
         <Routes>
           <Route path="/" element={<BodySection />} />
           <Route path="/services" element={<Services />} />
-          {/* <Route path="/admin" element={<Admin />}>
+          {/* <Route path="/dailyaccount" element={<DailyAccount />} /> */}
+          <Route element={<Admin />}>
             <Route index element={<Dashboard />} />
             <Route path="dashboard" element={<Dashboard />} />
-            <Route path="product" element={<Product />} />
-            <Route path="category" element={<Category />} />
-          </Route> */}
+            <Route path="dailyaccount" element={<DailyAccount />} />
+          </Route>
         </Routes>
-        <Footer />
       </BrowserRouter>
     </AuthContext.Provider>
   );
