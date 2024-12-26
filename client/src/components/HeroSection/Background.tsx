@@ -14,14 +14,14 @@ const Background: React.FC = () => {
       <div className="relative z-30 flex w-full max-w-[1366px] mx-auto items-center">
         <div className="flex flex-col md:w-[70%] max-w-[55rem] gap-5">
           <p
-            className="text-primary text-5xl font-bold tracking-wider text-center md:text-left"
+            className="text-primary text-2xl sm:text-4xl md:text-5xl font-bold tracking-wider text-left"
             style={{
               textShadow: "2px 2px 1px black",
             }}
           >
             Danphe International Consultancy
           </p>
-          <p className="text-lg text-white font-semibold tracking-wide">
+          <p className="text-sm sm:text-lg text-white font-semibold tracking-wide">
             Consultants offer advice and expertise to client organisations to
             help them improve their business performance.
           </p>

@@ -25,42 +25,42 @@ const Sidebar = () => {
         <hr className="" />
         <div className="my-5 flex h-full w-full flex-col gap-3 text-black">
           <Link
-            to="/dashboard"
+            to="/admin/dashboard"
             className="flex h-fit w-fit items-center justify-start gap-3"
           >
             <FontAwesomeIcon icon={faListSquares} className="h-5 w-5" />
             <h2 className="text-lg">Dashboard</h2>
           </Link>
           <Link
-            to="/dailyaccount"
+            to="/admin/dailyaccount"
             className="flex h-fit w-fit items-center justify-start gap-3"
           >
             <FontAwesomeIcon icon={faBook} className="h-5 w-5" />
             <h2 className="text-lg">Daily Account</h2>
           </Link>
           <Link
-            to="/appointment"
+            to="/admin/appointment"
             className="flex h-fit w-fit items-center justify-start gap-3"
           >
             <FontAwesomeIcon icon={faCalendarCheck} className="h-5 w-5" />
             <h2 className="text-lg">Appointment</h2>
           </Link>
           <Link
-            to="/insurance"
+            to="/admin/insurance"
             className="flex h-fit w-fit items-center justify-start gap-3"
           >
             <FontAwesomeIcon icon={faInstitution} className="h-5 w-5" />
             <h2 className="text-lg">Insurance</h2>
           </Link>
           <Link
-            to="/translation"
+            to="/admin/translation"
             className="flex h-fit w-fit items-center justify-start gap-3"
           >
             <FontAwesomeIcon icon={faExchangeAlt} className="h-5 w-5" />
             <h2 className="text-lg">Translation</h2>
           </Link>
           <Link
-            to="/officeexpense"
+            to="/admin/officeexpense"
             className="flex h-fit w-fit items-center justify-start gap-3"
           >
             <FontAwesomeIcon icon={faStore} className="h-5 w-5" />

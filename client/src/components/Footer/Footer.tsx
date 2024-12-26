@@ -23,9 +23,17 @@ const Footer = () => {
               <div className="flex flex-col">
                 <h1 className="text-xl font-semibold flex gap-2">
                   Find Us on:
-                  <Link to="#" className="flex items-center">
+                  <Link
+                    to="https://www.facebook.com/Danpheconsultancy789"
+                    className="flex items-center"
+                  >
                     <FaFacebook />
-                    &nbsp;
+                  </Link>
+                  &nbsp;
+                  <Link
+                    to="https://www.instagram.com/danpheinternationalconsultancy/"
+                    className="flex items-center"
+                  >
                     <FaInstagramSquare />
                   </Link>
                 </h1>
@@ -41,19 +49,19 @@ const Footer = () => {
                   </h2>
                   <div className="flex flex-col">
                     <Link
-                      to=""
+                      to="https://www.facebook.com/Danpheconsultancy789"
                       className="hover:opacity-60 text-black hover:underline"
                     >
                       <span>Facebook</span>
                     </Link>
                     <Link
-                      to=""
+                      to="https://www.instagram.com/danpheinternationalconsultancy/"
                       className="hover:opacity-60 text-black hover:underline"
                     >
                       <span>Instagram</span>
                     </Link>
                     <Link
-                      to=""
+                      to="https://www.tiktok.com/@danpheconsultancy"
                       className="hover:opacity-60 text-black hover:underline"
                     >
                       <span>TikTok</span>
@@ -97,23 +105,23 @@ const Footer = () => {
                   </h2>
                   <div className="flex flex-col">
                     <div className="flex items-start gap-3">
-                      {/* <Image
-                        className="w-10 h-10 mt-3"
-                        alt="Logo"
-                        width={100}
-                        height={100}
-                        src="/images/danpheinternationallogo.jpg"
-                      /> */}
                       <div className="flex flex-col">
-                        {/* <span className="text-primary text-lg font-semibold tracking-wide">
-                          Danphe International Consultancy Pvt. Ltd.
-                        </span> */}
                         <div className="flex flex-col justify-start flex-wrap">
-                          <div className="flex sm:gap-1 md:gap-5 flex-wrap">
-                            <span className="text-black">
-                              danphe2022@gmail.com
-                            </span>
-                            <span className="text-black">9860194329</span>
+                          <div className="flex flex-col flex-wrap">
+                            <Link
+                              to="tel: 9860194329"
+                              className="hover:opacity-60 text-black hover:underline"
+                            >
+                              <span className="text-black">9841661139</span>
+                            </Link>
+                            <Link
+                              to="mailto: danphe2022@gmail.com"
+                              className="hover:opacity-60 text-black hover:underline"
+                            >
+                              <span className="text-black">
+                                danphe2022@gmail.com
+                              </span>
+                            </Link>
                           </div>
                           <span className="text-black">
                             Gyaneshwor-30, Kathmandu, Nepal <br /> Near Germany
@@ -129,6 +137,12 @@ const Footer = () => {
           </footer>
         </div>
       </div>
+      <p className="text-white text-xs py-1 text-center w-full bg-primary">
+        Copyright &copy;{" "}
+        <span className="font-bold"> {new Date().getFullYear()} </span> Powered
+        By
+        <span className="font-bold"> Santosh Ghimire || Nischal Acharya </span>
+      </p>
     </>
   );
 };

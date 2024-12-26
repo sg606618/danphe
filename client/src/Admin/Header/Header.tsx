@@ -15,25 +15,8 @@ const Header = () => {
             <FontAwesomeIcon icon={faSearch} className="text-2xl text-black" />
           </button>
         </div>
-        <div className="items-center border border-black flex rounded-lg overflow-hidden bg-white px-2">
-          <FontAwesomeIcon
-            icon={faCalendarWeek}
-            className="w-5 h-5 z-[1111111]"
-          />
-          <select
-            name="date"
-            id="date"
-            className="w-[20rem] px-2 py-1 font-semibold outline-none border-none bg-white"
-          >
-            <option>something</option>
-          </select>
-          <select
-            name="date"
-            id="date"
-            className="w-[20rem] px-2 py-1 font-semibold outline-none border-none bg-white"
-          >
-            <option>something</option>
-          </select>
+        <div className="items-center flex">
+          <input type="date" name="date" id="date" className="outline-none border border-black rounded-lg text-xl" />
         </div>
         <div className="flex text-primary mr-auto p-5">
           <h1 className="m-auto font-semibold text-xl">Dashboard</h1>
